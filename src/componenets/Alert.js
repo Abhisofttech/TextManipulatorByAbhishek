@@ -1,16 +1,21 @@
 import React from 'react'
 
 function Alert(props) {
-    
-    return (
+    return(
         <>
+        {
+            props.alert &&
+       
         <div style={{height:'60px'}}>
-         { props.alert &&  <div className={`alert alert-${props.alert.type}`} role="alert">
+          <div className={`alert alert-${props.alert.type}`} role="alert">
                 {props.alert.type } : {props.alert.msg}
-            </div>}
             </div>
+            </div>
+             }
         </>
     )
+    
+    
     
 }
 
