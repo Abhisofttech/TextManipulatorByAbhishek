@@ -66,7 +66,7 @@ export default function TextForm(props) {
             </div>
             <div className="container" style={myStyle}>
                 <h1>Text Summary</h1>
-                <p> {(text.split(" ").filter((a)=>{return a.length!=0})).length} word  {text.length} characters</p>
+                <p> {(text.split(" ").filter((a)=>{return a.length!==0})).length} word  {text.length} characters</p>
 
                 <h2>Your Text</h2>
 
